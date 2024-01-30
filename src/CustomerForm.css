@@ -1,0 +1,98 @@
+/* CustomerForm.css */
+
+/* Container styling */
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background-color: #f8f9fa;
+  }
+  
+  /* Form styling */
+  form {
+    display: grid;
+    gap: 15px;
+  }
+  
+  /* Input styling */
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  
+  input {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+  }
+  
+  input:focus {
+    border-color: #007bff;
+  }
+  
+  /* Button styling */
+  button {
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Success button styling */
+  button.success {
+    background-color: #28a745;
+    color: #fff;
+  }
+  
+  /* Failure button styling */
+  button.failure {
+    background-color: #dc3545;
+    color: #fff;
+  }
+  
+  button:hover {
+    filter: brightness(0.8);
+  }
+  
+  /* Status and Details styling */
+  div > div {
+    margin-top: 20px;
+    width: 100%;
+  }
+  
+  .validation-status {
+    padding: 12px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #fff;
+    width: 100%;
+  }
+  
+  /* Success status styling */
+  .validation-status.green {
+    background-color: #28a745;
+  }
+  
+  /* Failure status styling */
+  .validation-status.red {
+    background-color: #dc3545;
+  }
+  
+  /* Error status styling */
+  .validation-status.error {
+    background-color: #dc3545;
+  }
+  
